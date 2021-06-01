@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  background-color: #0a0a18;
+  font-weight: 700; }
+
+#wrapper {
+  overflow: hidden;
+  min-width: 375px;
+  position: relative; }
+
+.py-section {
+  padding: 100px 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-weight: 700; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.125rem; }
+
+h4 {
+  font-size: 1rem;
+  color: #f1c12b; }
+
+p {
+  font-size: 1.25rem;
+  color: #8383a4;
+  font-weight: 400; }
+
+a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 700; }
+
+button {
+  font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  background-color: #f1c12b;
+  border-radius: 6px;
+  width: 13.75rem;
+  height: 3rem;
+  font-weight: 500; }
+
+.p-1 {
+  font-size: 1rem;
+  color: #8383a4; }
+
+.p-2 {
+  font-size: 0.75rem;
+  color: #8383a4; }
+
+.h-2 {
+  color: #ffffff; }
+
+.h-3 {
+  color: #8383a4; }
+
+#particles-js {
+  margin-top: -110px; }
+
+.banner {
+  position: relative;
+  max-width: 1000;
+  max-height: 100vh; }
+
+.banner-content {
+  position: absolute;
+  max-width: 800;
+  left: 49%;
+  top: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%); }
+
+.plus-sign {
+  color: #f1c12b; }
+
+.benefitscol-2 {
+  margin-top: 7.5rem; }
+
+.first,
+.second {
+  border-radius: 5px;
+  width: 30.5rem;
+  height: 2.5rem; }
+
+.first {
+  background-color: #151534; }
+
+.second {
+  background-color: #070713; }
+
+.card {
+  background-color: #12122b; }
+
+.image-community {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-left: 60px;
+  margin-top: 30px; }
+
+.footer-a {
+  color: #ffffff; }
+
+.shadow-text {
+  position: relative; }
+
+.shadow-text::before {
+  content: attr(data-title);
+  position: absolute;
+  transform: scale(2);
+  color: #0a0a18;
+  text-shadow: 0px 0px 2px #8383a4;
+  z-index: -1; }
