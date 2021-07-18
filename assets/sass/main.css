@@ -79,7 +79,8 @@ button {
   color: #8383a4;
 }
 
-.h-2 {
+.h-2,
+.banner-p {
   color: #ffffff;
 }
 
@@ -105,6 +106,10 @@ button {
   z-index: 100;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.banner-f {
+  font-size: 1rem;
 }
 
 .plus-sign {
@@ -145,17 +150,13 @@ button {
   color: #ffffff;
 }
 
-.shadow-text {
-  position: relative;
-}
-
 .shadow-text::before {
   content: attr(data-title);
   position: absolute;
   -webkit-transform: scale(2);
           transform: scale(2);
   color: #0a0a18;
-  text-shadow: 0px 0px 2px #202036;
+  text-shadow: 0px 0px 2px #8383a4;
   z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
