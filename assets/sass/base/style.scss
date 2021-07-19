@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import 'variables.scss';
 
 *,
 :after,
@@ -140,7 +140,6 @@ button {
 .second {
   background-color: $grey4;
 }
-//Community
 
 .card {
   background-color: $grey2;
@@ -152,34 +151,30 @@ button {
   margin-top: 30px;
 }
 
-.qr_block {
+.qr__block {
   position: relative;
-  display: inline-block;
+  &:hover {
+    .qrcode__box {
+      opacity: 1;
+      z-index: 1000;
+    }
+  }
 }
-
-.ptr {
-  cursor: pointer;
-}
-
-.qr_box {
+.qrcode__box {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
   height: 150px;
   width: 150px;
-  border-radius: 0.2rem;
-  padding: 10px;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 100;
+  transform: translateX(-50%);
+  background-color: $grey5;
   opacity: 0;
+  z-index: -1000;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 20px 20px rgb(0 0 0 / 10%);
 }
-
-//Hover
-
-.qr_block:hover .qr_box {
-  opacity: 1;
-  top: -160px;
+.ptr {
+  cursor: pointer;
 }
 
 //shadow
