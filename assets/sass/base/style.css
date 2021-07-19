@@ -147,36 +147,36 @@ button {
 .image-community {
   height: 3.125rem;
   width: 3.125rem;
-  margin-left: 3px;
   margin-top: 30px;
 }
 
-.qr_block {
+.qr__block {
   position: relative;
-  display: inline-block;
 }
 
-.ptr {
-  cursor: pointer;
+.qr__block:hover .qrcode__box {
+  opacity: 1;
+  z-index: 1000;
 }
 
-.qr_box {
+.qrcode__box {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
   height: 150px;
   width: 150px;
-  border-radius: 0.2rem;
-  padding: 10px;
-  background-color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 100;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #202036;
   opacity: 0;
+  z-index: -1000;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.qr_block:hover .qr_box {
-  opacity: 1;
-  top: -160px;
+.ptr {
+  cursor: pointer;
 }
 
 .shadow-text {
