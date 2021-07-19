@@ -24,7 +24,12 @@ body {
 }
 
 .py-section {
-  padding: 100px 0;
+  padding: 50px 0;
+}
+@media screen and (min-width: 567px) {
+  .py-section {
+    padding: 100px 0;
+  }
 }
 
 h1,
@@ -37,7 +42,12 @@ h4 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 567px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 h2 {
@@ -94,23 +104,18 @@ button {
   color: #8383a4;
 }
 
-#particles-js {
-  margin-top: -110px;
-}
-
 .banner {
   position: relative;
-  max-width: 1000;
   max-height: 100vh;
 }
 
 .banner-content {
   position: absolute;
-  max-width: 800;
-  left: 49%;
-  top: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 
 .banner-f {
@@ -123,7 +128,12 @@ button {
 }
 
 .benefitscol-2 {
-  margin-top: 7.5rem;
+  margin-top: 0;
+}
+@media screen and (min-width: 567px) {
+  .benefitscol-2 {
+    margin-top: 7.5rem;
+  }
 }
 
 .first,
@@ -167,6 +177,7 @@ button {
   height: 150px;
   width: 150px;
   z-index: 100;
+  padding: 10px;
   transform: translateX(-50%);
   background-color: #202036;
   opacity: 0;
