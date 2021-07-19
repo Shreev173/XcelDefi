@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   line-height: 1.4;
@@ -28,7 +35,7 @@ h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -109,7 +116,8 @@ button {
   font-size: 0.75rem;
 }
 
-.plus-sign {
+.plus-sign,
+.highlight {
   color: #f1c12b;
 }
 
@@ -139,12 +147,36 @@ button {
 .image-community {
   height: 3.125rem;
   width: 3.125rem;
-  margin-left: 60px;
+  margin-left: 3px;
   margin-top: 30px;
 }
 
-.footer-a {
-  color: #ffffff;
+.qr_block {
+  position: relative;
+  display: inline-block;
+}
+
+.ptr {
+  cursor: pointer;
+}
+
+.qr_box {
+  height: 150px;
+  width: 150px;
+  border-radius: 0.2rem;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.qr_block:hover .qr_box {
+  opacity: 1;
+  top: -160px;
 }
 
 .shadow-text {

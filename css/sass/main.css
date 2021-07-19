@@ -29,10 +29,10 @@ h3,
 h4 {
   font-family: "Nunito", sans-serif;
   color: #ffffff;
-  font-weight: 900; }
+  font-weight: 700; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 3rem; }
 
 h2 {
   font-size: 2rem; }
@@ -125,14 +125,26 @@ button {
   margin-left: 3px;
   margin-top: 30px; }
 
-.qr__block {
+.qr_block {
   position: relative;
   display: inline-block; }
 
 .ptr {
   cursor: pointer; }
 
-.qr__block:hover .qr__box {
+.qr_box {
+  height: 150px;
+  width: 150px;
+  border-radius: 0.2rem;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; }
+
+.qr_block:hover .qr_box {
   opacity: 1;
   top: -160px; }
 
