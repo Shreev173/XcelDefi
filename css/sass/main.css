@@ -24,7 +24,7 @@ h3,
 h4 {
   font-family: "Nunito", sans-serif;
   color: #ffffff;
-  font-weight: 700; }
+  font-weight: 900; }
 
 h1 {
   font-size: 2.5rem; }
@@ -92,7 +92,8 @@ button {
 .banner-f {
   font-size: 0.75rem; }
 
-.plus-sign {
+.plus-sign,
+.highlight {
   color: #f1c12b; }
 
 .benefitscol-2 {
@@ -116,7 +117,7 @@ button {
 .image-community {
   height: 3.125rem;
   width: 3.125rem;
-  margin-left: 60px;
+  margin-left: 3px;
   margin-top: 30px; }
 
 .footer-a {
