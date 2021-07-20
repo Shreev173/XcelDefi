@@ -65,7 +65,16 @@ a {
   font-size: 1rem;
   font-weight: 700;
 }
-
+.text-white {
+  color: $white !important;
+}
+a {
+  &:hover {
+    &.text-white {
+      color: $primary !important;
+    }
+  }
+}
 button {
   font-family: $fontfamily-sec;
   color: $white;
@@ -95,12 +104,18 @@ button {
 .h-3 {
   color: $grey1;
 }
+.h-2,
+.h-3 {
+  width: 375px;
+  margin-bottom: 0;
+}
 
 //Banner
 
 .banner {
   position: relative;
   max-height: 100vh;
+  min-height: 300px;
 }
 
 .banner-content {
@@ -114,6 +129,13 @@ button {
 
 .banner-f {
   font-size: 0.75rem;
+}
+.banner__text {
+  font-size: 0.76rem;
+
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
 }
 
 .plus-sign,
@@ -134,8 +156,7 @@ button {
 .first,
 .second {
   border-radius: 5px;
-  width: 30.5rem;
-  height: 2.5rem;
+  height: 3rem;
 }
 .first {
   background-color: $grey3;
@@ -193,4 +214,17 @@ button {
   color: $background-color;
   text-shadow: 0px 0px 2px $grey5;
   z-index: -1;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+.border-1 {
+  border: 1px solid $grey1;
+  padding: 10px 20px;
+  display: inline-block;
+  color: $grey1;
+  border-radius: 4px;
+}
+#particles-js {
+  opacity: 0.6;
 }
